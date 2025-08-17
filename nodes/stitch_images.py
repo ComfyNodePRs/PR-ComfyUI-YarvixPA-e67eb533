@@ -82,7 +82,8 @@ Outputs an 'unstitch' dict with parameters and original shapes for later reversa
 
     @staticmethod
     def _pad_to_match(img1, img2, direction):
-        h1, w1 = img1.shape[1:3]; h2, w2 = img2.shape[1:3]
+        h1, w1 = img1.shape[1:3]
+        h2, w2 = img2.shape[1:3]
         if direction in ["left","right"]:
             t_h = max(h1,h2)
             pads = [((t_h-h1)//2,(t_h-h1+1)//2), ((t_h-h2)//2,(t_h-h2+1)//2)]

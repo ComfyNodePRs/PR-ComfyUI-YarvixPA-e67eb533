@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-YarvixPA"
+description = "A set of custom nodes that simplify things."
+version = "1.0.0"
+license = {file = "LICENSE"} 
+dependencies = ["opencv-python", "numpy", "Pillow", "svgwrite", "reportlab", "svglib", "vtracer", "timm"]
+
+[project.urls]
+Repository = "https://github.com/YarvixPA/ComfyUI-YarvixPA"
+
+[tool.comfy]
+PublisherId = "yarvixpa"
+DisplayName = "ComfyUI-YarvixPA"
+Icon = ""

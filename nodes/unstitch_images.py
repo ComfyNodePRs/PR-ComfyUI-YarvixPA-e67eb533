@@ -40,7 +40,8 @@ Reverses a previous stitching operation, outputting one of the original images b
             start2, end2 = spacing, spacing + orig2
         # Slice helper
         def slice_dim(img, s, e, d):
-            sl = [slice(None)] * img.ndim; sl[d] = slice(s, e)
+            sl = [slice(None)] * img.ndim
+            sl[d] = slice(s, e)
             return img[tuple(sl)]
         first_img = slice_dim(image, start1, end1, dim)
         second_img = slice_dim(image, start2, end2, dim)
